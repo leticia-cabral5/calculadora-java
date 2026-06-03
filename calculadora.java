@@ -47,7 +47,9 @@ public class calculadora {
                             if (subopcao == 1) {
                                 System.out.print("Insira outro número: ");
                                 double num3 = scanner.nextDouble();
-                                System.out.println(result + " + " + num3 + " = " + (result + num3));
+                                double resultanterior = result;
+                                result = result + num3;
+                                System.out.println(resultanterior + " + " + num3 + " = " + result);
                             }
                         }
                         break;
@@ -62,7 +64,9 @@ public class calculadora {
                             if (subopcao == 1) {
                                 System.out.print("Insira outro número: ");
                                 double num3 = scanner.nextDouble();
-                                System.out.println(result + " - " + num3 + " = " + (result - num3));
+                                double resultanterior = result;
+                                result = result - num3;
+                                System.out.println(resultanterior + " - " + num3 + " = " + result);
                             }
                         }
                         break;
